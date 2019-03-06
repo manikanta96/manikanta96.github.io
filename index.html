@@ -1,58 +1,111 @@
+<!DOCTYPE html>
 <html>
-<head>
-<style>
-body
-{
-    font-family: 'Open Sans', sans-serif;
-}
+    <head>
+        <title>My home page</title>
+        <style>
+            body {
+                      background-color:black;
+            }
+            .Style{
+                width:100%;
+                height:100px;
+                background:yellow;
+                padding: inherit;
+            
+            }
+            .icon{
+                float: left;
+                width:10%;
+                padding-left: 100px;
+                height: 50%;
+            } 
+            .icon img{
+                width:100px;
+                height:100px;
+                padding-left:10px;
+            }
+            .icon1{
+                float:right;
+                width:20%;
+            }
+            .icon1 img{
+                width:100px;
+                height: 100px;
+            }
+            .pa {
+                float:center;
+                margin:10px;
+                padding:30px;
+                color: #555;
+                text-align: center;
+            }
+            ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  border: 1px solid #e7e7e7;
+                  background-color: #f3f3f3;
+                }
 
-.fb-profile img.fb-image-lg{
-    z-index: 0;
-    width: 100%;  
-    margin-bottom: 10px;
-}
+                li {
+                  float: left;
+                }
 
-.fb-image-profile
-{
-    margin: -90px 10px 0px 50px;
-    z-index: 9;
-    width: 20%; 
-}
+                li a {
+                  display: block;
+                  color: #666;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
 
-@media (max-width:768px)
-{
-    
-.fb-profile-text>h1{
-    font-weight: 700;
-    font-size:16px;
-}
+                li a:hover:not(.active) {
+                  background-color: #ddd;
+                }
 
-.fb-image-profile
-{
-    margin: -45px 10px 0px 25px;
-    z-index: 9;
-    width: 20%; 
-}
-}
-</style>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-</head>
-<body>
-
-<div class="container">
-    <div class="fb-profile">
-        <img align="left" class="fb-image-lg" src="http://lorempixel.com/850/280/nightlife/5/" alt="Profile image example"/>
-        <img align="left" class="fb-image-profile thumbnail" src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/16114195_1839288399686387_2257221467073880444_n.jpg?_nc_cat=108&_nc_ht=scontent-bom1-1.xx&oh=e08fb6cb0dddcd1f590f8e161364c0fe&oe=5CFA0AA4" alt="Profile image example"/>
-        <div class="fb-profile-text">
-            <h1>Patnana Manikanta</h1>
-            <p>+91 7730811311</p>
+                li a.active {
+                  color: white;
+                  background-color: #4CAF50;
+                }
+            td {
+                padding: 100px;
+                margin: 20px;
+            }
+            h1{
+                color:aquamarine;
+            }
+      </style>
+    </head>
+    <body>
+        <div class = "Style">
+            <div class="icon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4uCcF_tll56XPq43isb6qK5BEWOAbIRzHQ-BhrnB-vfgwKNdZ">
+            </div>
+            <h1 class = "pa">AxiomIO.com</h1>
+            <div class="icon1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4uCcF_tll56XPq43isb6qK5BEWOAbIRzHQ-BhrnB-vfgwKNdZ">  </div>
         </div>
-    </div>
-</div> <!-- /container -->  
-</body>
+        
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#">Study</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <table>
+            
+            <tr>
+                <td><a href="https://codenvy.io/site/login?redirect_url=https%3A%2F%2Fcodenvy.io%2F"><img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLNwN8DYdjwv-_Rk2oMB-SrI6W4l9yCnyDsvhn1eNUFQlYu8S" alt="Smiley face" height="200" width="200"></a>
+                    <h1>        Codenvy.io</h1> </td>
+                <td><a href="https://github.com/"><img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLb7PpS_ZcHGbUqZVHQ3mdtGSPgDoqNaii85H05fz7ESK2w1Qs" alt="Smiley face" height="200" width="200"></a> <h1>GitHub.com</h1></td>
+                <td><a href="http://nilclass.com/"><img align="left" src="nilclass.png" alt="Smiley face" height="200" width="200"> </a><h1>NilClass.com</h1> </td>
+            </tr>
+            <tr>
+                <td><a href="https://launchschool.com/books"><img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_JA4eGQR-0O1AuAzkS0L73rRAlsF_uUo7quqyKJGdOAlSm30pQ" alt="Smiley face" height="200" width="200"></a><h1>LaunchSchool</h1> </td>
+                <td><a href="https://evernote.com/"><img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqd2REZYpRXG9rX0DGSTaeNw-lsAcAuCiZoPPBhQ2T4cOojAzJ" alt="Smiley face" height="200" width="200"></a><h1>Evernote</h1> </td>
+                <td><a href="https://postach.io/"><img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMCLpN0p4cpaXAFU62yyMkYiIKBFcCPn18vhfcu-JGmcfDhzroQ" alt="Smiley face" height="200" width="200"></a> <h1>Postach.io</h1></td>
+            </tr>
+        </table>
+       
+    </body>
 </html>
